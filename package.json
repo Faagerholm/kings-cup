@@ -1,15 +1,21 @@
 {
+  "homepage": "http://Faagerholm.github.io/kings-cup",
   "name": "kings-cup",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

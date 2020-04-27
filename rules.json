@@ -1,0 +1,38 @@
+{
+    "basic":
+        {
+            "2": {
+                "HEARTS": "Give 2 to any player",
+                "DIAMONDS": "Give 2 to any player",
+                "SPADES": "Drink 2",
+                "CLUBS": "Drink 2"
+            },
+            "3": {
+                "HEARTS": "Give 3 to any player",
+                "DIAMONDS": "Give 3 to any player",
+                "SPADES": "Drink 3",
+                "CLUBS": "Drink 3"
+            },
+            "4": {
+                "HEARTS": "Give 4 to any player",
+                "DIAMONDS": "Give 4 to any player",
+                "SPADES": "Drink 4",
+                "CLUBS": "Drink 4"
+            },
+            "5": {
+                "HEARTS": "Give 5 to any player",
+                "DIAMONDS": "Give 5 to any player",
+                "SPADES": "Drink 5",
+                "CLUBS": "Drink 5"
+            },
+            "6": "Guys: All men drink",
+            "7": "Chicks: All women drink",
+            "8": "Eight-mate: Choose a 'mate' who must now drink whenever you drink. This is one-directional, you do not have to drink when they drink. It can be chained, ex- if Bob is my mate and I am Sally's mate, when sally drinks then I drink then Bob drinks.",
+            "9": "Rhyme: Go around the circle rhyming one word. The person who drew chooses the word. First long hesitation or failure is the loser and must drink.",
+            "10": "Category: The person who drew chooses a category, and then everyone must name something in it.",
+            "JACK": "Never have I ever: Everyone holds up three fingers. The person who drew says, 'Never have I ever _____________ ' and everyone who has done it puts down a finger. Then the next person says, 'Never have I ever _________' The first person to lose all their fingers must drink. It is allowed to say something you actually have done, and put down a finger on your own turn if you wish.",
+            "QUEEN": "Question qeen, anybody answering your question, drinks 1. Valid untill next question queen is selected.",
+            "KING": "Kings cup: Pour some of your drink to the kings cup. If this is the 4th king, You have get to drink the kings cup, Cheers!",
+            "ACE": "Make up a rule: Your rule may cancel an existing rule."
+        }
+}
