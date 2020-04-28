@@ -6,7 +6,7 @@ const Layout = (props) => (
         <title>Kings cup</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css" />
-        <meta charset="utf-8" />  
+        <meta charSet="utf-8" />  
         </Head>
         <div style={{margin: "1rem"}}>
             {props.children}
