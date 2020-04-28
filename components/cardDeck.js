@@ -100,13 +100,12 @@ export default class cardDeck extends PureComponent {
         if(this.state.card) {
             if(this.state.players) {
                 return (
-                <div onClick={this.nextCard} style={{maxWidth: "20rem"}}>
+                <div onClick={this.nextCard}>
                     <p style={{float: "left"}}>{this.state.remaining}/52</p><p className="text-center">{this.state.players[this.state.nextPlayer]}'s turn</p>
-                    
                     <div className={desktopStyle.desktop}>
                         <img src={this.state.card.image} alt="Playing card" className={desktopStyle.image}/>
-                        <div style={{marginTop: "0.5rem"}}>
-                            <p>{this.state.rule}</p>
+                        <div className={desktopStyle.ruleBox}>
+                            <p className={desktopStyle.rules}>{this.state.rule}</p>
                         </div>
                     </div>
                 </div>
@@ -116,8 +115,8 @@ export default class cardDeck extends PureComponent {
                 <div onClick={this.nextCard}>
                     <p>{this.state.remaining}/52</p>
                     <div className={desktopStyle.desktop}>
-                        <img src={this.state.card.image} alt="Playing card" style={{width: '500px'}} className={desktopStyle.image}/>
-                        <div className={desktopStyle.ruleBox} style={{marginTop: "0.5rem"}}>
+                        <img src={this.state.card.image} alt="Playing card" className={desktopStyle.image}/>
+                        <div className={desktopStyle.ruleBox}>
                             <p className={desktopStyle.rules}>{this.state.rule}</p>
                         </div>
                     </div>

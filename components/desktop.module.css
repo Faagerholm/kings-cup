@@ -1,6 +1,12 @@
 
+.desktop {
+    text-align: center;
+    display: block;
+}
+
 .image {
-    max-width: 99%;
+    margin: 2rem 0;
+    max-width: 80%;
 }
 
 @media screen and (min-width: 800px){
@@ -10,6 +16,7 @@
         gap: 1rem;
     }
     .ruleBox {
+        margin-top: 1.5rem;
         position: relative;
         max-width: 500px;
     }
