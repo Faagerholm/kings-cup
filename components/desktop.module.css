@@ -1,0 +1,23 @@
+
+.image {
+    max-width: 99%;
+}
+
+@media screen and (min-width: 800px){
+    .desktop {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+    .ruleBox {
+        position: relative;
+        max-width: 500px;
+    }
+    .rules {
+        position: absolute;
+        bottom: 10%;
+    }
+    .image {
+        max-width: 500px;
+    }
+}

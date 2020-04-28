@@ -19,14 +19,9 @@
                 "SPADES": "Drink 4",
                 "CLUBS": "Drink 4"
             },
-            "5": {
-                "HEARTS": "Give 5 to any player",
-                "DIAMONDS": "Give 5 to any player",
-                "SPADES": "Drink 5",
-                "CLUBS": "Drink 5"
-            },
-            "6": "Guys: All men drink",
-            "7": "Chicks: All women drink",
+            "5": "Guys: All men drink",
+            "6": "Chicks: All women drink",
+            "7": "7th table: Going clockwise, each player counts 1,2,3... Everything from the 7th table or with a 7 in it is replaced by a 'beep'. The first to fail, drinks.",
             "8": "Eight-mate: Choose a 'mate' who must now drink whenever you drink. This is one-directional, you do not have to drink when they drink. It can be chained, ex- if Bob is my mate and I am Sally's mate, when sally drinks then I drink then Bob drinks.",
             "9": "Rhyme: Go around the circle rhyming one word. The person who drew chooses the word. First long hesitation or failure is the loser and must drink.",
             "10": "Category: The person who drew chooses a category, and then everyone must name something in it.",

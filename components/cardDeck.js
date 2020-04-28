@@ -3,6 +3,7 @@ import Rules from '../rules.json'
 import Router from 'next/router'
 import Popup from 'reactjs-popup'
 import style from './modal.module.css'
+import desktopStyle from './desktop.module.css'
 
 export default class cardDeck extends PureComponent {
     
@@ -69,7 +70,7 @@ export default class cardDeck extends PureComponent {
                 .then(
                     (result) => {
                         let rule = "";
-                        if(["2", "3", "4", "5"].indexOf(result.cards[0].value) >= 0){
+                        if(["2", "3", "4"].indexOf(result.cards[0].value) >= 0){
                             rule = Rules["basic"][result.cards[0].value][result.cards[0].suit]
                         }else {
                             rule = Rules["basic"][result.cards[0].value]
@@ -101,9 +102,12 @@ export default class cardDeck extends PureComponent {
                 return (
                 <div onClick={this.nextCard} style={{maxWidth: "20rem"}}>
                     <p style={{float: "left"}}>{this.state.remaining}/52</p><p className="text-center">{this.state.players[this.state.nextPlayer]}'s turn</p>
-                        <img src={this.state.card.image} alt="Playing card" style={{width: '90%'}} className="text-center"/>
-                    <div style={{marginTop: "1rem", paddingTop: "1rem"}}>
-                        <p>{this.state.rule}</p>
+                    
+                    <div className={desktopStyle.desktop}>
+                        <img src={this.state.card.image} alt="Playing card" className={desktopStyle.image}/>
+                        <div style={{marginTop: "0.5rem"}}>
+                            <p>{this.state.rule}</p>
+                        </div>
                     </div>
                 </div>
                 )
@@ -111,9 +115,11 @@ export default class cardDeck extends PureComponent {
             return (
                 <div onClick={this.nextCard}>
                     <p>{this.state.remaining}/52</p>
-                        <img src={this.state.card.image} alt="Playing card" style={{width: '90%'}} className="text-center"/>
-                    <div style={{marginTop: "1rem", paddingTop: "1rem"}}>
-                        <p>{this.state.rule}</p>
+                    <div className={desktopStyle.desktop}>
+                        <img src={this.state.card.image} alt="Playing card" style={{width: '500px'}} className={desktopStyle.image}/>
+                        <div className={desktopStyle.ruleBox} style={{marginTop: "0.5rem"}}>
+                            <p className={desktopStyle.rules}>{this.state.rule}</p>
+                        </div>
                     </div>
                 </div>
             )
